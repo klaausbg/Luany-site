@@ -1,18 +1,18 @@
 /* General Styles */
 body {
-  font-family: "Roboto", sans-serif; /* Using a more elegant font */
   background-color: #10012a; /* Soft background color */
   margin: 0;
-  padding: 0;
+  padding: 20px;
   box-sizing: border-box;
-  color: #2c3e50; /* Darker text color for contrast */
+  color: #45058e;
+  border-bottom: 5px solid #fbb84d;
+  margin-bottom: 20px; /* Darker text color for contrast */
 }
 
 /* Header Styles */
 header {
-  background-color: #45058e; /* Light purple background */
+  background-color: #482177; /* Light purple background */
   padding: 20px;
-  text-align: center;
   margin-bottom: 20px;
   border-bottom: 5px solid #fbb84d; /* Decorative border */
 }
@@ -28,9 +28,16 @@ header {
 #doctor-picture img {
   max-width: 100%;
   height: auto;
-  width: 200px;
+  width: 250px;
   border-radius: 50%;
-  border: 4px solid #8a4d76; /* Thicker border for emphasis */
+  margin: 35px;
+  border: 4px solid #fbb84d; /* Thicker border for emphasis */
+}
+
+.side-photo {
+  border-radius: 10px; /* Adjust to make it rectangular */
+  width: 200px; /* Set a new width */
+  height: 100px; /* Set a new height */
 }
 
 /* Contact Info Styles */
@@ -39,7 +46,8 @@ header {
   top: 10px;
   right: 10px;
   text-align: right;
-}
+  font-family: "Helvetica", sans-serif;
+  }
 
 .contact-info a {
   display: block;
@@ -66,14 +74,12 @@ header {
   margin: 0;
   font-size: 2.5em;
   color: #fbb84d;
-  font-family: "Roboto", sans-serif; /* Elegant font for the title */
 }
 
 #titulo p {
   margin: 5px 0 0;
   font-size: 1.2em;
   color: #fbb84d;
-  font-family: "Roboto", sans-serif;
 }
 
 /* Grid Container Styles */
@@ -88,25 +94,25 @@ header {
   width: 50%;
   border: 1px solid #e1c6d6;
   padding: 20px;
-  background-color: #fff0f6; /* Light pink background for sections */
+  background-color: #fbb84d; /* Light purple background for sections */
   border-radius: 15px; /* Rounded corners for a softer look */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: background-color 0.3s;
 }
 
 #grid-container section:hover {
-  background-color: #ffe3ed; /* Slight color change on hover */
+  background-color: #ffef87; /* Slight color change on hover */
 }
 
 #grid-container section h2 {
   margin-top: 0;
-  color: #4a2f37;
+  color: #45058e;
   font-family: "Roboto", sans-serif; /* Elegant font for section headings */
 }
 
 #grid-container section p,
 #grid-container section ul {
-  font-family: ;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Specific Adjustments for Each Section */
@@ -114,33 +120,10 @@ header {
 .treatments,
 .recommendations,
 .contato {
-  background: linear-gradient(
-    to right,
-    #ffecd2 0%,
-    #fcb69f 100%
-  ); /* Gradient background */
+  background: linear-gradient(to right, #fbb84d); /* Gradient background */
   border: none; /* No border needed due to gradient */
 }
 
-.about h2,
-.treatments h2,
-.recommendations h2,
-.contato h2 {
-  color: #2c3e50; /* Darker color for more contrast */
-}
-
-.treatments ul {
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-.contato {
-  background: linear-gradient(
-    to right,
-    #d9a7c7 0%,
-    #fffcdc 100%
-  ); /* Different gradient for variety */
-}
 #container {
   display: flex;
 }
@@ -155,18 +138,4 @@ header {
 #reviews-section {
   width: 50%;
   padding: 20px;
-}
 
-section {
-  border: 1px solid #e1c6d6;
-  padding: 20px;
-  background-color: #fff0f6;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.reviews {
-  background-color: red;
-  padding: 20px;
-  border-radius: 15px;
-}
