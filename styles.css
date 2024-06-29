@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif; /* Using a more elegant font */
+  background-color: #f0e6ef; /* Soft background color */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #2c3e50; /* Darker text color for contrast */
+}
+
+/* Header Styles */
+header {
+  background-color: #ffe3ed; /* Light pink background */
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 5px solid #e1c6d6; /* Decorative border */
+}
+
+#doctor-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#doctor-picture img {
+  max-width: 100%;
+  height: auto;
+  width: 200px;
+  border-radius: 50%;
+  border: 4px solid #8a4d76; /* Thicker border for emphasis */
+}
+
+/* Contact Info Styles */
+.contact-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+}
+
+.contact-info a {
+  display: block;
+  color: #8a4d76; /* Soft purple text */
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-info a i {
+  margin-right: 5px;
+}
+
+/* Title Styles */
+#titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#titulo h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #4a2f37;
+  font-family: "Dancing Script", cursive; /* Elegant font for the title */
+}
+
+#titulo p {
+  margin: 5px 0 0;
+  font-size: 1.2em;
+  color: #8a4d76;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Grid Container Styles */
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout */
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+#grid-container section {
+  border: 1px solid #e1c6d6;
+  padding: 20px;
+  background-color: #fff0f6; /* Light pink background for sections */
+  border-radius: 15px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s;
+}
+
+#grid-container section:hover {
+  background-color: #ffe3ed; /* Slight color change on hover */
+}
+
+#grid-container section h2 {
+  margin-top: 0;
+  color: #4a2f37;
+  font-family: "Dancing Script", cursive; /* Elegant font for section headings */
+}
+
+#grid-container section p,
+#grid-container section ul {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Specific Adjustments for Each Section */
+.about,
+.treatments,
+.recommendations,
+.contato {
+  background: linear-gradient(
+    to right,
+    #ffecd2 0%,
+    #fcb69f 100%
+  ); /* Gradient background */
+  border: none; /* No border needed due to gradient */
+}
+
+.about h2,
+.treatments h2,
+.recommendations h2,
+.contato h2 {
+  color: #2c3e50; /* Darker color for more contrast */
+}
+
+.treatments ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.contato {
+  background: linear-gradient(
+    to right,
+    #d9a7c7 0%,
+    #fffcdc 100%
+  ); /* Different gradient for variety */
+}
