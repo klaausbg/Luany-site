@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    background-color: #f0f0f5; /* Light grey background for a soft look */
+    margin: 0;
+    box-sizing: border-box;
+    color: #333; /* Darker text color for better readability */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #4a90e2; /* Blue background for header */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #d9d9d9; /* Light grey border */
+  }
+  
+  #doctor-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  #doctor-picture img {
+    max-width: 100%;
+    height: auto;
+    width: 250px;
+    border-radius: 50%;
+    margin: 35px;
+    border: 4px solid #4a90e2; /* Blue border to match header */
+  }
+  
+  .side-photo {
+    border-radius: 10px; /* Adjust to make it rectangular */
+    width: 200px; /* Set a new width */
+    height: 100px; /* Set a new height */
+  }
+  
+  /* Contact Info Styles */
+  .contact-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+  }
+  
+  .contact-info a {
+    display: block;
+    color: #fff; /* White text for contrast */
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .contact-info a i {
+    margin-right: 5px;
+  }
+  
+  /* Title Styles */
+  #titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #titulo h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff; /* White text for contrast */
+  }
+  
+  #titulo p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    color: #fff; /* White text for contrast */
+  }
+  
+  #logo img {
+    width: 100px; /* Adjust logo size */
+    height: auto;
+  }
+  
+  /* Grid Container Styles */
+  #grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  #grid-container section {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    padding: 20px;
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 15px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s;
+  }
+  
+  #grid-container section:hover {
+    background-color: #e3f2fd; /* Light blue on hover */
+  }
+  
+  #grid-container section h2 {
+    margin-top: 0;
+    color: #2c3e50; /* Stronger color for section headings */
+    font-family: 'Roboto', sans-serif; /* Elegant font for section headings */
+  }
+  
+  #grid-container section p,
+  #grid-container section ul {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Specific Adjustments for Each Section */
+  .about,
+  .treatments,
+  .recommendations,
+  .contato {
+    background: linear-gradient(to right, #4a90e2, #d9d9d9); /* Gradient background */
+    border: none; /* No border needed due to gradient */
+  }
+  
+  #container {
+    display: flex;
+  }
+  
+  #main-sections {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #reviews-section {
+    width: 50%;
+    padding: 20px;
+  }
